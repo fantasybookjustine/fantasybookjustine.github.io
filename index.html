@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="./favicon.ico">
 </head>
 
 <body>
@@ -58,7 +61,14 @@
         <img id="logo-nav" src="./IMG/logo.blanc.png" alt="logo" width='50' height='50'>
     </div>
     <div class="main1">
-        <p>"Un livre est un monde magnifique que l'on porte dans sa poche."</p>
+        <p class="proverbe1">Un livre est un monde magnifique que l'on porte dans sa poche...</p>
+        <div class="block-arrow-down">
+        <p>Appuyez pour descendre...</p>
+        <a href="#" class="link-arrow">
+            <img src="./icons8-vers-le-bas-100.png" alt="arrow">
+        </a>
+    </div>
+
         <img src="./IMG/Vector.png" alt="vector" class="vector" width="100%" height="25%">
     </div>
     <div class="main2">
@@ -77,8 +87,7 @@
             <div id="coeur-text">
                 <h1>Coup de coeur du mois</h1>
                 <h3>Humanmal</h3>
-                <p1>Quelques siècles après le Grand Zéro, les humanimaux dominent le monde.
-                    À la suite d'une catastrophe climatique sans précédent, les animaux ont été forcés d'évoluer pour
+                <p1>Quelques siècles après le Grand Zéro, les humanimaux dominent le monde, la suite d'une catastrophe climatique sans précédent, les animaux ont été forcés d'évoluer pour
                     sauver
                     la planète. Devenus des humanimaux, ils ont pris le pouvoir sur les Hommes, contrôlant leurs
                     naissances
@@ -124,9 +133,15 @@
             <img class="separateur-blanc" src="./IMG/separateur.blanc.jpg" alt="separateur" width='500' height='400'>
         </div>
 
-        <div id="main3-logo">
-            <img src="IMG/logo.blanc.png" alt="logo-coeur" width='200' height='200'>
-        </div>
+
+    </div>
+
+
+    <div id="main3-logo">
+        <img src="IMG/logo.blanc.png" alt="logo-coeur" width='200' height='200'>
+    </div>
+
+    <div class="back">
 
         <div class="container">
             <button class="open-form-button" onclick="openForm()">Contactez-nous</button>
@@ -156,7 +171,28 @@
 
     </div>
 
-    <script src="main.js"></script>
+
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                        class="icon ion-social-snapchat"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+        </script>
 
 </body>
 
