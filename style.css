@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: dragons;
+    src: url(/JU/EG_Dragon_Caps.otf);
+
+}
+
+@font-face {
+    font-family: DutchHarley;
+    src: url(/JU/DutchHarley.woff2);
+
+}
+
+body::-webkit-scrollbar {
+background-color: black;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 35px;
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 10px solid rgba(120, 120, 120, 0.267);
+}
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+  background-color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    width: 100dvw;
+    height: 7vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.main1 {
+    width: 100dvw;
+    height: 164vh;
+    color: white;
+    background-image: url(/JU/IMG/dragon.jpg);
+    background-size: 100%;
+}
+
+.main2 {
+    display: flex;
+    width: 100dvw;
+    height: 220vh;
+    color: white;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#main2-logo {
+    margin-bottom: 100px;
+}
+
+.coeur {
+    display: flex;
+    width: 80vw;
+    height: 72vh;
+}
+
+#coeur-img {
+    width: 40%;
+    height: 100%;
+}
+
+#coeur-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: DutchHarley;
+}
+
+.vector {
+    position: absolute;
+    bottom: -515px;
+}
+
+#backimg {
+    width: 100dvw;
+    height: 115vw;
+    background-image: url(/JU/IMG/open-book-concept-fairy-tale-fiction-storytelling.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.vector2 {
+    height: 10%;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.main3 {
+    position: absolute;
+    display: flex;
+    width: 100dvw;
+    height: 190vh;
+    color: white;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.review {
+    display: flex;
+    width: 80vw;
+    height: 72vh;
+}
+
+#review-img {
+    width: 40%;
+    height: 100%;
+}
+
+#review-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+#menuToggle
+{
+  display: block;
+
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: white;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 25px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  max-width: 250px;
+  width: 100dvw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  color: white;
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu li
+{
+    color: white;
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label
+{
+  cursor: pointer;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+h2 {
+    font-family: dragons;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: DutchHarley;
+    letter-spacing: 1px;
+    font-size: 30px; 
+}
+
+.container {
+    text-align: center;
+  }
+  
+  .open-form-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .open-form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-header h2 {
+    margin: 0;
+  }
+  
+  .close-form-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .close-form-button:hover {
+    background-color: #000000;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    background-color: #000000a1;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #626262;
+  }
+
+  #name {
+    width: 94%;
+  }
+
+  #email {
+    width: 94%;
+  }
+
+  #message {
+    width: 94%;
+  }
