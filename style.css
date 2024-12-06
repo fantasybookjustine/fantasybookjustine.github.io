@@ -79,12 +79,20 @@ body {
 .main2 {
     display: flex;
     width: 100dvw;
-    height: 220vh;
+    height: 155vh;
     color: white;
     background-color: black;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    z-index: 10 !important;
+}
+
+#main2-logo {
+    z-index: 15;
+}
+
+.separateur-blanc {
+    height: 15vh;
 }
 
 .coeur {
@@ -116,7 +124,7 @@ body {
 
 #backimg {
     width: 100dvw;
-    height: 115vw;
+    height: 120vw;
     background-image: url(./IMG/open-book-concept-fairy-tale-fiction-storytelling.jpg);
     background-size: 100%;
     position: relative;
@@ -129,10 +137,10 @@ body {
 }
 
 .main3 {
-    
+
     display: flex;
     width: 100dvw;
-    height: 160vh;
+    height: 105vh;
     color: white;
     background-color: black;
     flex-direction: column;
@@ -350,7 +358,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:f 15px;
+    margin-bottom: f 15px;
 }
 
 .form-header h2 {
@@ -364,7 +372,7 @@ h1 {
     padding: 5px 10px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 14px;    
+    font-size: 14px;
 }
 
 .close-form-button:hover {
@@ -426,68 +434,68 @@ h1 {
 }
 
 .footer-basic {
-    padding:40px 0;
-    background-color:#000000;
-    color:#4b4c4d;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-  }
-  
-  .footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ffffff;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#ffffff;
-    margin-bottom:0;
-  }
-  
+    padding: 40px 0;
+    background-color: #000000;
+    color: #4b4c4d;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
 #main3-logo {
     display: flex;
-    width: 100vw;
+    width: 18vw;
     height: 30vh;
     justify-content: center;
     background-color: black;
@@ -495,4 +503,99 @@ h1 {
 
 h2 {
     margin-bottom: 20px !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .main1 {
+        background-image: url(./IMG/fairytale-scene-coming-out-book\ \(2\).jpg);
+        background-repeat: no-repeat;
+        height: 69vh;
+    }
+
+    .proverbe1 {
+        font-size: 9px;
+        position: absolute;
+        width: 60vh;
+        height: 60vh;
+        right: 0px;
+        top: -40px;
+    }
+
+    .block-arrow-down {
+        font-size: 15px;
+        bottom: 40vh;
+    }
+
+    .vector {
+        bottom: 250px;
+        height: 10vh;
+    }
+
+    .main2 {
+        display: flex;
+        height: auto;
+        align-items: center;
+    }
+
+    .coeur {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #coeur-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #coeur-text {
+        width: 85vw;
+        font-size: 25px;
+    }
+
+    #livre {
+        width: 280px;
+        height: 400px;
+    }
+
+    .separateur-blanc {
+        height: 5vh;
+        width: 50vw;
+    }
+
+    .main3 {
+        height: auto;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #review-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #review-text {
+        width: 85vw;
+        font-size: 25px;
+    }
+
+    #main2-logo {
+        width: 30vw;
+        height: 13vh;
+    }
+
+    #main3-logo {
+        width: 30vw;
+        height: 13vh;
+    }
+
+
+
 }
